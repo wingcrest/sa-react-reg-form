@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/*--- Variables ---*/
+
+:root {
+  --color-bg: #ffd88f;
+  --color-text-default: #333333;
+  --color-cont-border: #6644a6;
+  --color-cont-shadow: #ff8282;
+  --color-heading: #b81230;
+  --color-input-default: #9c9c9c;
+  --color-checkbox-default: #b8b8b8;
+  --color-check-mark: #5db05b;
+  --color-btn-default: #dddddd;
+
+  --cont-border-radius: 10px;
+  --input-border-radius: 0.5em;
+  --font-size-default: 1em;
+  --input-width: 13em;
+}
+
+/*--- Scrollbar and Selection ---*/
+
+::-webkit-scrollbar {
+  width: 1em;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 0 var(--cont-border-radius) var(--cont-border-radius) 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 0 var(--cont-border-radius) var(--cont-border-radius) 0;
+}
+
+::-webkit-scrollbar-thumb {
+  min-height: 35px;
+  min-width: 35px;
+  background-color: var(--color-cont-shadow);
+  border: 5px solid #ffffff;
+  border-radius: var(--cont-border-radius);
+}
+
+::selection {
+  background: var(--color-bg);
+  color: #000000;
+}
+
+::-moz-selection {
+  background: var(--color-bg);
+  color: #000000;
+}
+
+/*--- General ---*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  color: var(--color-text-default);
+}
+
+body {
+  margin: 0;
+
+  background: var(--color-bg);
+  font-size: var(--font-size-default);
+}
